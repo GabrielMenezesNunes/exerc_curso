@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e3fff800 82.08%, #e3fff861 100%);
+  
+}
+
+.page{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100.5rem;
+  margin: 6.5rem auto 0rem;
+  
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 4.8rem;
+}
+
+nav ul li a{
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  
+  color: #1F1534;
+  opacity: 0.5;
+  
+}
+
+nav ul li a:hover {
+  opacity: 1.0;
+  font-weight: bold;
+}
+
+.page main {
+  display: flex;
+  gap: 10.2rem;
+  margin: 6.5rem auto 7.5rem;
+  width: 100.8rem;
+}
+
+.page main .text {
+  width: 48.9rem;
+  height: 33.2rem;  
+  margin-top: 5.1rem;
+}
+
+.page main .text h1 {
+  font-weight: 400;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  
+  color: #000000;
+}
+
+.page main .text h1 span {
+  color: #89C5CC;
+}
+.page main .text p {
+  margin: 4.0rem 0rem;
+  width: 43.8rem;
+  color: #7D7987;
+}
+
+.page main .text button {
+  display: flex;
+  align-items: center;
+  gap: 1.0rem;
+  
+  background: #69B99D;
+  border-radius: 4px;
+  padding: 1.5rem 3.2rem 1.6rem;
+}
+
+.page main .text button:hover {
+  background: #127451;
+}
+
+.page main .text button a {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  
+  color: #F9F9F9;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #000000;
+  font-weight: bold;
+}
+
+footer a:hover {
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
