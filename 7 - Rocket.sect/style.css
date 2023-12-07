@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.page {
+  background: #2C2B3D;
+  min-height: 100vh;
+}
+
+.page, a {
+  font-family: 'JetBrains Mono';
+  color: #FFFFFF;
+  text-align: center;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+  .page nav {
+  width: 108.3rem;
+  margin: 0 auto;
+  padding-top: 7.1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .page nav ul {
+  display: flex;
+  gap: 6.4rem;
+}
+
+  .page nav ul li a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+ .page nav ul li a:hover {
+  opacity: 0.5;
+}
+
+  .page main {
+  width: 109.2rem;
+  margin: 10.1rem auto 15.7rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+  .page main img {
+    object-fit: contain;
+  }
+
+  .page main .text{
+  width: 61.4rem;
+}
+  
+  .page main .text h1 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.0rem;
+  }
+
+  .page main .text p {
+    width: 60.4rem;
+
+    color: #C2C2C2;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .page span {
+    color: #00BFA6;
+  }
+
+  .page main .text  p span {
+    font-weight: bold;
+  }
+
+  .page footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 58.9rem;
+    margin: 0 auto;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .page footer #line {
+    border-top: 0.1rem #00BFA6 solid;
+    padding-top: 2.7rem;
+
+  }
