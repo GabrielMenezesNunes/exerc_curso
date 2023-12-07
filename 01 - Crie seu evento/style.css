@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: 0;
+  list-style: none;
+
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+
+body::before{
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 36.8rem;
+  background: #121214;
+}
+
+body {
+  background: #C1BCCC;
+  min-height: 100vh;
+}
+
+.page {
+  width: 73.6rem;
+  margin: 0 auto 9.1rem;
+}
+
+header {
+  width: 31.9rem;
+  margin: 8.0rem 0 4.2rem;
+}
+
+header h1 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+
+  color: #FFFFFF;
+  margin-bottom: 2.4rem ;
+}
+
+
+header p {
+  color: #42D3FF;
+}
+
+header p,
+main form fieldset .input-wrapper label span,
+.input-wrapper input,
+textarea,
+select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+main form {
+  background: #FAFAFC;
+  padding: 6.4rem;
+  border-radius: 8px 8px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+main form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+main form fieldset #legend legend {
+  font-family: 'Archivo', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+
+  color: #32264D;
+  padding-bottom: 1.6rem;
+  border-bottom: #E6E6F0 1px solid;
+}
+
+main form fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form .input-wrapper input::placeholder, select::placeholder{
+  color: #c1c0c0b4;
+}
+
+
+form .input-wrapper input:required:not(:placeholder-shown):invalid {
+  border: 1px solid #FF1010;
+}
+
+main form fieldset .input-wrapper label, .input-check label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+main form fieldset .input-wrapper label span {
+  color: #c1c0c0b4;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+main form fieldset .input-wrapper label span:hover {
+  color: #747375;
+}
+
+main form fieldset .input-wrapper input, textarea, select {
+  height: 5.6rem;
+  border: #E6E6F0 1px solid;
+  border-radius: 8px;
+  background: #FAFAFC;
+  padding: 1.5rem 2.4rem ;
+
+  color: #4E4958;
+}
+
+main form fieldset .input-wrapper textarea {
+   height: 16.8rem;
+}
+
+main form fieldset .input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Select' clip-path='url(%23clip0_1_54)'%3E%3Cpath id='Vector' d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem top 50%;
+}
+
+main form fieldset .input-check{
+  position: relative;
+}
+
+main form fieldset .input-check input {
+  position: absolute;
+  opacity: 0;
+}
+
+main form fieldset .input-check label::before {
+  content: '';
+  width: 2.4rem;
+  height: 2.4rem;
+
+  display: block;
+  border: #E6E6F0 1px solid;
+  border-radius: 8px;
+}
+
+main form fieldset .input-check label {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+main form fieldset .input-check input:focus + label::before {
+  outline: 2px black solid;
+}
+
+main form fieldset .input-check input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2802_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2802_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+main form fieldset #colum-3 {
+  display: flex;
+  gap: 2.0rem;
+}
+
+main form fieldset #colum-3 :first-child {
+  width: 100%;
+}
+
+main form fieldset #colum-3 .input-wrapper input {
+  appearance: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4.0rem 6.4rem;
+  border-radius: 0 0 8px 8px;
+  
+  background: #F0F0F4;
+}
+
+footer button {
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  
+  color: #FFFFFF;
+  background: #04D361;
+  padding: 1.5rem 4.0rem;
+  border-radius: 8px;
+}
+
+footer button:hover {
+  background: #0c8040;
+}
